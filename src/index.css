@@ -1,0 +1,118 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* RunaDev Palette */
+    --runa-black: 0 0% 4%;
+    --runa-dark: 0 0% 17%;
+    --runa-gray-dark: 0 0% 17%;
+    --runa-gray: 0 0% 42%;
+    --runa-gray-light: 0 0% 58%;
+    --runa-silver: 40 5% 81%;
+    --runa-off-white: 36 14% 94%;
+    --runa-white: 0 0% 100%;
+    --runa-accent: 0 0% 58%;
+    --runa-accent-dark: 0 0% 42%;
+    --runa-silver-light: 40 8% 89%;
+
+    /* Shadcn mappings */
+    --background: var(--runa-off-white);
+    --foreground: var(--runa-black);
+    --card: var(--runa-white);
+    --card-foreground: var(--runa-black);
+    --popover: var(--runa-white);
+    --popover-foreground: var(--runa-black);
+    --primary: var(--runa-black);
+    --primary-foreground: var(--runa-white);
+    --secondary: var(--runa-silver-light);
+    --secondary-foreground: var(--runa-black);
+    --muted: var(--runa-silver-light);
+    --muted-foreground: var(--runa-gray-light);
+    --accent: var(--runa-accent);
+    --accent-foreground: var(--runa-white);
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: var(--runa-black);
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Fonts */
+    --font-head: "Source Sans Pro", sans-serif;
+    --font-body: "Poppins", sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: var(--font-body);
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-head);
+    color: hsl(var(--runa-black));
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.25s, opacity 0.25s;
+  }
+}
+
+/* ---- Scroll animation ---- */
+@keyframes scrollAnim {
+  0%   { opacity: 0; transform: scaleY(0); transform-origin: top; }
+  40%  { opacity: 1; transform: scaleY(1); transform-origin: top; }
+  80%  { opacity: 0; transform: scaleY(1); transform-origin: bottom; }
+  100% { opacity: 0; }
+}
+
+/* ---- Diagonal lines texture ---- */
+.texture-lines {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 60px,
+    rgba(255,255,255,0.018) 60px,
+    rgba(255,255,255,0.018) 61px
+  );
+}
+
+.texture-lines-sm {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 40px,
+    rgba(255,255,255,0.018) 40px,
+    rgba(255,255,255,0.018) 41px
+  );
+}
+
+.texture-lines-cta {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 50px,
+    rgba(255,255,255,0.015) 50px,
+    rgba(255,255,255,0.015) 51px
+  );
+}

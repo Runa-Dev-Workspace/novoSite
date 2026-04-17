@@ -14,7 +14,7 @@ const ProductsSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] gap-4 auto-rows-auto">
         {/* Featured card */}
         <a
-          href="https://site-blue-sigma-72.vercel.app/"
+          href="https://dashhub.runadev.com.br/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-runa-accent rounded-xl border border-runa-black/[0.07] transition-all duration-300 hover:shadow-[0_8px_32px_rgba(0,0,0,0.09)] hover:-translate-y-1 md:col-span-2 lg:col-span-1 lg:row-span-2 min-h-[380px] relative overflow-hidden group block"

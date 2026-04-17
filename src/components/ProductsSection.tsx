@@ -47,9 +47,14 @@ const ProductsSection = () => (
             </p>
 
             {/* Botão */}
-            <span className="inline-block text-[11px] font-bold tracking-[1.5px] px-5 py-2.5 rounded-full bg-runa-accent text-white w-fit transition-all duration-300 group-hover:bg-white group-hover:text-black">
+            <a 
+              href="https://dashhub.runadev.com.br/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-[11px] font-bold tracking-[1.5px] px-5 py-2.5 rounded-full bg-runa-accent text-white w-fit transition-all duration-300 group-hover:bg-white group-hover:text-black"
+            >
               SAIBA MAIS
-            </span>
+            </a>
           </div>
         </a>
 

@@ -53,7 +53,7 @@ const SiteFooter = () => (
         © 2024 – 2026 <strong className="text-runa-white/[0.45]">RunaDev</strong>. Todos os direitos reservados. · Política de Privacidade · Cookies
       </span>
       <div className="flex gap-2.5">
-        {["bi-twitter-x", "bi-linkedin", "bi-instagram", "bi-facebook"].map((icon) => (
+        {["bi-instagram", "bi-whatsapp"].map((icon) => (
           <a
             key={icon}
             href="#"

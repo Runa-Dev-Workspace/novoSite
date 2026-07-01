@@ -2,9 +2,11 @@ const CtaSection = () => (
   <section id="contact" className="bg-runa-black py-16 lg:py-[100px] px-6 lg:px-12 text-center relative overflow-hidden">
     <div className="absolute inset-0 texture-lines-cta pointer-events-none" />
     <div className="relative z-[1]">
-      <h2 className="font-head text-4xl lg:text-[52px] font-extralight text-runa-white leading-[1.2] mb-4">
-        Pronto para construir<br />
-        <strong className="font-extrabold text-runa-silver">algo real?</strong>
+     <h2 className="font-head text-4xl lg:text-[52px] font-extralight text-runa-white leading-[1.2] mb-4">
+        Pronto para construir{" "}
+        <strong className="font-extrabold text-runa-silver">
+          algo real?
+        </strong>
       </h2>
       <p className="text-base text-runa-white/[0.42] mb-10 font-light">
         Fale com a RunaDev e descubra o que podemos criar juntos.
